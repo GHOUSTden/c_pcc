@@ -3,12 +3,18 @@
 # - `factorial_while` must use while loop;
 # - `factorial_for` must use for loop.
 def factorial_while(n: int) -> int:
-    pass
-
+    i = 1
+    res = 1
+    while i <= n:
+        res *= i
+        i += 1
+    return res
 
 def factorial_for(n: int) -> int:
-    pass
-
+    res = 1
+    for i in range(1, n + 1):
+        res *= i
+    return res
 
 # Do not change the below's code
 if __name__ == "__main__":

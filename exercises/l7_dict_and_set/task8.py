@@ -7,9 +7,13 @@
 # 1. "aabc" -> {"a": 2, "b": 1, "c": 1}
 # 2. "" -> {}
 def count_chars(s: str) -> dict[str, int]:
-    pass
-
-
+    count = {}
+    for v in s:
+        if v in count:
+            count[v] = count[v] + 1
+        else:
+            count[v] = 1
+    return count
 # Do not change the below's code
 if __name__ == "__main__":
     assert count_chars("aabc") == {"a": 2, "b": 1, "c": 1}

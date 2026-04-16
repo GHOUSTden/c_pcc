@@ -9,8 +9,10 @@
 # For example,
 # take("abcd", 2, True) -> "cd"
 def take(s: str, n: int, last: bool = False) -> str:
-    pass
-
+    if last:
+        return s[-n:] if n > 0 else ""
+    else:
+        return s[0:max(0, n)]
 
 # Do not change the below's code
 if __name__ == "__main__":

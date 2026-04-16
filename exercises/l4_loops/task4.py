@@ -3,8 +3,14 @@
 #
 # Return `None`, if list is empty
 def find_max(l: list[int]) -> int | None:
-    pass
+    if len(l) == 0:
+        return None
+    res = 0
 
+    for i in range(0, len(l)):
+        if res < l[i]:
+            res = l[i]
+    return res
 
 # Do not change the below's code
 if __name__ == "__main__":

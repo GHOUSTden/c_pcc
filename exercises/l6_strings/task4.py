@@ -7,8 +7,8 @@
 #
 # NOTE: use // division to define slice start index
 def middle(s: str, n: int) -> str:
-    pass
-
+    sm = max(0, (len(s) // 2) - ((n + 1) // 2))
+    return s[sm:n + sm]
 
 # Do not change the below's code
 if __name__ == "__main__":

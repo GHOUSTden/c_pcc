@@ -6,8 +6,10 @@ from typing import Any
 # It is guaranteed that all elements from list `l`
 # can be converted to string
 def proxy_join(l: list[Any]) -> str:
-    pass
-
+    res = ""
+    for v in l:
+        res += f"{v}, "
+    return res[:-2]
 
 # Do not change the below's code
 if __name__ == "__main__":

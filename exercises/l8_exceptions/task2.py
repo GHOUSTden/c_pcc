@@ -6,8 +6,10 @@ def peekaboo(l: list[str]) -> str:
 
     # Use try...except block to handle the exception.
     # If success return the below's line of code, otherwise `return "boo"`
-    return f"peek {l[i]}"
-
+    try:
+        return f"peek {l[i]}"
+    except IndexError:
+        return "boo"
 
 if __name__ == "__main__":
     l = ["a", "b", "c", "ubu", "baba", "daba", "ububu"]

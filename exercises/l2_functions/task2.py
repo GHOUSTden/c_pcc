@@ -5,7 +5,8 @@
 # by whitespace ' '.
 #
 # For example, call of `join("a", "b")` should return "a b"
-
+def join(a, b) -> str:
+    return a + " " + b
 
 # Do not change the below's code
 if __name__ == "__main__":

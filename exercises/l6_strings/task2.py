@@ -6,8 +6,7 @@
 # For example,
 # take("abcd", 3) -> "abc"
 def take(s: str, n: int) -> str:
-    pass
-
+    return s[0:max(0, n)]
 
 # Do not change the below's code
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ L10_PATH = Path(__file__).parent
 # Use Path class and L10_PATH constant to finish the function.
 # Function should return True if `p` is file and False otherwise
 def is_file(p: Path):
-    pass
+    return True if p.is_file() else False
 
 
 # Do not modify the code below

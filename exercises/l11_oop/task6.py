@@ -7,6 +7,10 @@ class Person:
         self.first_name = first_name
         self.last_name = last_name
 
+    @property
+    def full_name(self):
+        return self.first_name + " " + self.last_name
+
 
 # Do not change the code below
 if __name__ == "__main__":

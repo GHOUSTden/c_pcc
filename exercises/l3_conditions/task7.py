@@ -1,6 +1,16 @@
 # Write the body of the function to make the script work without errors
 def grade(score: int) -> str:
-    pass
+    if score >= 95:
+        return "A"
+    elif score >= 85:
+        return "B"
+    elif score >= 75:
+        return "C"
+    elif score >= 65:
+        return "D"
+    else:
+        return "F"
+
 
 
 if __name__ == "__main__":

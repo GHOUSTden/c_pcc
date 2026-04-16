@@ -3,8 +3,12 @@
 # HINT:
 # Use while loop to count sum from 0 to n (included)
 def sum_to(n: int) -> int:
-    pass
-
+    i = 0
+    res = 0
+    while i <= n:
+        res += i
+        i += 1
+    return res
 
 # Do not change the below's code
 if __name__ == "__main__":

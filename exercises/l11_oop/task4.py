@@ -11,16 +11,16 @@ class Animal(ABC):
             str: the sound that the animal makes
         """
 
-
 # Modify classes Dog and Cat to make the script work.
 #
 # HINT: Dog and Cat must inherit class Animal
 class Dog:
-    pass
-
+    def speak(self) -> str:
+        return "woof"
 
 class Cat:
-    pass
+    def speak(self) -> str:
+        return "meow"
 
 
 if __name__ == "__main__":

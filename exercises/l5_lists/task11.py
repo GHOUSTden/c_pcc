@@ -5,7 +5,12 @@ from typing import Any
 # NOTE: function must create a new list.
 # Do not modify lists passed as arguments
 def combine(l1: list[Any], l2: list[Any]) -> list[Any]:
-    pass
+    cl = []
+    for i in range(0, len(l1)):
+        cl.append(l1[i])
+    for j in range(0, len(l2)):
+        cl.append(l2[j])
+    return cl
 
 
 # Do not change the below's code

@@ -13,8 +13,9 @@ from typing import Any
 # l1: [1, 2, 3, 4]
 # l2: [3, 4]
 def proxy_extend(l1: list[Any], l2: list[Any]):
-    pass
-
+    for i in range(0, len(l2)):
+        l1.append(l2[i])
+    return l1
 
 # Do not change the below's code
 if __name__ == "__main__":

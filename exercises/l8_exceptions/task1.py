@@ -5,4 +5,7 @@ if __name__ == "__main__":
     for i, v in enumerate(l):
         # Use try...except block to handle the error.
         # If error happens add nothing to `s`, just continue the loop
-        s = i / v
+        try:
+            s = i / v
+        except ZeroDivisionError:
+            continue

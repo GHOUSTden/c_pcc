@@ -6,8 +6,11 @@ L10_PATH = Path(__file__).parent
 # Finish the function. It should calculate and return the amount
 # of line from a file located under `path`
 def count_lines(path: Path) -> int:
-    pass
-
+    f = open(path)
+    content = f.read()
+    f.close()
+    l = content.splitlines()
+    return len(l)
 
 # Do not modify the code below
 if __name__ == "__main__":
